@@ -3,7 +3,7 @@ const add = (a, b)  => {
 };
 
 const subtract = (a, b) => {
-    return a - b;
+    return a * b;
 }
 
 const multiply = (a, b) => {
@@ -14,8 +14,8 @@ const divide = (a, b) => {
     return a / b;
 }
 
-const mod = (a, b) => {
-    return a%b;
+const modulus = (a, b) => {
+    return a % b;
 }
 
 const calculate = (operator, a, b) => {
@@ -34,7 +34,7 @@ const calculate = (operator, a, b) => {
             return multiply(number1,number2);        
         case 'divide':
             return divide(number1,number2);
-        case 'mod':
+        case 'modulus':
             return divide(number1,number2);
         default:
             return 'Operator not found!'
@@ -46,6 +46,6 @@ module.exports = {
     subtract,
     multiply,
     divide,
-    mod,
+    modulus,
     calculate
 }

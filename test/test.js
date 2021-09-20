@@ -26,8 +26,8 @@ describe('Calculate functions', function() {
     });
   });
   describe('mo function', function() {
-    it('should return 1', function() {
-      assert.equal(calculate.mod(13,3), 1);
+    it('should return 3', function() {
+      assert.equal(calculate.modulus(15,4), 3);
     })
   });
 });
