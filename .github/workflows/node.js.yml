@@ -30,12 +30,12 @@ jobs:
     - run: npm test
     
   jobs2-deploy: 
-  
+
     needs: [build]
     runs-on: ubuntu-latest
 
     steps: 
-      - name: ssh to learn-deploy server
+      - name: ssh to calculate-deploy server
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
