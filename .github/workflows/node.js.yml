@@ -29,7 +29,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     
-  jobs2-deploy: 
+  deploy: 
 
     needs: [build]
     runs-on: ubuntu-latest
@@ -43,4 +43,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: | 
-            ls -al
+            ls -lah
