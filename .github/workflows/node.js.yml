@@ -43,4 +43,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: | 
-            ls -lah
+            ls -all
