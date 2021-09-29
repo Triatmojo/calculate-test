@@ -43,4 +43,9 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: | 
-            ls -all
+            cd ~/apps/calculate-test
+            git pull origin master
+            ~/.nvm/versions/node/v12.19.0/bin/npm install
+            ~/.nvm/version/node/v12.19.0/bin/pm2 restart all
+            
+            
