@@ -10,8 +10,8 @@ router.get('/', function(req, res) {
     number2
   } = req.query;
   
-  const result = calculateHandler.calculate(operator, number1, number2);
-  res.json({ result });
+  const hasil = calculateHandler.calculate(operator, number1, number2);
+  res.json({ hasil });
 });
 
 module.exports = router;
